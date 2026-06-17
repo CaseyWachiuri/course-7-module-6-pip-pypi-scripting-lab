@@ -1,0 +1,3 @@
+I use Vim...
+
+The weird folder you found created was a result of my funny mistake of saving and accidentally creating the :w file. So I decided to keep it.

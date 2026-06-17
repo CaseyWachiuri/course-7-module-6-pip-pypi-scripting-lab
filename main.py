@@ -3,9 +3,13 @@
 '''
 '''
 
+import os
+import sys
+import pytest
+from datetime import datetime
+
 from generate_log import *
 from fetch_data import *
-import requests
 
 if __name__ == "__main__":
     post = fetch_data()
