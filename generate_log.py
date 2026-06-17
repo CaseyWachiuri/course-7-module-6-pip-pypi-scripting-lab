@@ -6,6 +6,7 @@
 from datetime import datetime
 
 def generate_log(log_data):
+    # log_data = ["User logged in", "User updated profile", "Report Exported"]
     # Validation (It must be worthy!? The chosen one!!!!!
     if not isinstance(log_data, list):
         raise ValueError("log_data must be a list")
@@ -22,5 +23,5 @@ def generate_log(log_data):
     print(f'Log written to {filename}')
 
     # Return the filename
-    return file
+    return filename
 
