@@ -3,23 +3,9 @@
 '''
 '''
 
-from datetime import datetime
+from generate_log import *
+from fetch_data import *
 import requests
-
-def generate_log():
-    log_data = ["User logged in", "User updated profile", "Report exported"]
-    filename = f"log_{datetime.now().strftime('%Y%m%d')}.txt"
-
-    with open(filename, "w") as file:
-        for entry in log_data:
-            file.write(f"{entry}\n")
-
-    return (f"Log written to {filename}")
-
-def fetch_data():
-    response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
-    if response.status_code == 200:
-        return response.json()
 
 if __name__ == "__main__":
     post = fetch_data()
